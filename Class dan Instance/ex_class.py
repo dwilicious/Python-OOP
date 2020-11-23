@@ -3,6 +3,9 @@ class akun:
     Rekening klien bank.
     """
 
+    def __repr__(self):
+        return f"<Akun {self.name} memiliki {self.saldo} >"
+
     def __init__(self, pemilik, saldo=0):
         self.name = pemilik
         self.saldo = saldo
@@ -20,3 +23,5 @@ print(a.name, a.saldo)
 a.deposit(200)
 
 print(a.name, a.saldo)
+
+print(a)
