@@ -42,41 +42,42 @@ Untuk membuat objek Akun Rekening Bank, Anda perlu memanggil class. Membuat obje
 
 misal:
 a = Akun ('Albert Einstein', 999999)
-m = Akun ('Leonardo da Vinci', 666666)
+
+l = Akun ('Leonardo da Vinci', 666666)
 
 Kemudian Anda dapat mengakses atribut seperti variabel menggunakan sintaks titik (.):
-
+```python
 print (a.pemilik)
 print (m.saldo)
-
+```
 Dan Anda dapat mengakses metode dengan cara yang serupa:
-
+```python
 a.setor (100)
 a.penarikan (10)
 print(a.balance)
-
+```
 Penggunaan metode tersebut mengubah status objek akun Einstein, tetapi tidak merubah status Leonardo.
 
-Membuat class dapat dicetak
+## Membuat class dapat dicetak
 
 Salah satu kelemahan class adalah ketika Anda mencetak sebuah objek, Anda akan melihat sesuatu seperti ini:
-
+```python
 <class '**main**.akun'>
-
+```
 Solusinya adalah dengan menambahkan metode khusus, **repr**(self) ke class yang mengembalikan string. Metode ini akan dipanggil setiap kali representasi string diperlukan: saat mencetak dan objek, saat objek muncul di dalam daftar atau dalam pesan error.
 
 Biasanya, Anda akan membuat string pendek di **repr**(self) yang mendeskripsikan objek:
-
+```python
 def **repr**(self):
 return f"<Akun {self.name} memiliki {self.saldo} >"
-
+```
 Dengan penambahan metode tersebut maka saat dilakukan operasi pencetakan obyek akan menghasilkan keluaran berupa string
 
+```python
 print (a)
-
 output:
-
 <Akun Albert Einstein memiliki 1000199 >
+```
 
 Mengimplementasikan **repr**(self) sebagai metode pertama di class baru dapat menjadi pertimbangan untuk jika ingin menghasilkan keluaran string.
 
