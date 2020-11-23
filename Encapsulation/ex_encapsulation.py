@@ -10,7 +10,7 @@ class orang:
         if isinstance(isi_usia, int) and isi_usia > 0 and isi_usia < 120:
             self._usia = isi_usia
 
-    def get_name(self):
+    def cari_nama(self):
         return self._nama
 
     def __str__(self):
