@@ -1,11 +1,12 @@
-Apakah class itu?
+# Apa itu class?
 
 Dalam pemrograman berorientasi objek, class adalah cetak biru untuk membuat objek. Class menentukan apa yang dimiliki sebuah objek (atribut) dan apa yang dapat dilakukan objek (metode). Umumnya Class mewakili sebuah kata benda yang dapat merupakan seseorang, hewan, buah, ataupun benda mati. Contohnya adalah kelas Pegawai. Kelas Pegawai mempunyai atribut berupa nama, usia, dan jenis kelamin serta memiliki metode bekerja. (wikipedia indonesia)
 
 Class digunakan untuk mengelola kompleksitas, sehingga program utama menjadi lebih sederhana.
 Contoh cara menggunakan class
 
-Mendefinisikan class
+## Mendefinisikan class
+
 Untuk menentukan class, Anda perlu mendefinisikan tiga hal:
 -beri nama class
 -definisikan atribut (variabel yang dimiliki class)
@@ -13,6 +14,7 @@ Untuk menentukan class, Anda perlu mendefinisikan tiga hal:
 
 Dalam kode di bawah ini, class untuk akun rekening bank dapat disusun sebagai berikut:
 
+```python
 class akun:
 """
 Rekening klien bank.
@@ -27,6 +29,7 @@ Rekening klien bank.
 
     def penarikan(self, jumlah):
         self.saldo -= jumlah
+```
 
 Akun class berisi dua atribut (nama pemilik dan saldo) dan dua metode (setoran dan penarikan).
 
