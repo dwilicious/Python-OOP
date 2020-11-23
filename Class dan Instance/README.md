@@ -55,28 +55,28 @@ print(a.balance)
 Penggunaan metode tersebut mengubah status objek akun Einstein, tetapi tidak merubah status Leonardo.
 
 Membuat class dapat dicetak
+
 Salah satu kelemahan class adalah ketika Anda mencetak sebuah objek, Anda akan melihat sesuatu seperti ini:
 
-:::pesta
-<** main **. Akun di 0x7f64519d8438>
-Solusi yang baik adalah dengan menambahkan metode khusus, **repr ** (self) ke class yang mengembalikan string. Metode ini akan dipanggil setiap kali representasi string diperlukan: saat mencetak dan objek, saat objek muncul di dalam daftar atau dalam pesan kesalahan.
+<class '**main**.akun'>
 
-Biasanya, Anda akan membuat string pendek di **repr ** (self) yang mendeskripsikan objek:
+Solusinya adalah dengan menambahkan metode khusus, **repr**(self) ke class yang mengembalikan string. Metode ini akan dipanggil setiap kali representasi string diperlukan: saat mencetak dan objek, saat objek muncul di dalam daftar atau dalam pesan error.
 
-::: python3
-def **repr ** (sendiri):
-kembalikan f "<Akun '{self.name}' dengan kredit galaksi {self.balance}>"
-Dengan metode ini didefinisikan, instruksi
+Biasanya, Anda akan membuat string pendek di **repr**(self) yang mendeskripsikan objek:
 
-::: python3
-cetak (a)
-akan menghasilkan keluaran
+def **repr**(self):
+return f"<Akun {self.name} memiliki {self.saldo} >"
 
-:::pesta
-<Akun 'Ada Lovelace' dengan 1324 kredit galaksi> "
-Ide yang bagus untuk mengimplementasikan **repr ** (self) sebagai metode pertama di class baru.
+Dengan penambahan metode tersebut maka saat dilakukan operasi pencetakan obyek akan menghasilkan keluaran berupa string
 
-Peringatan
-Dalam bahasa pemrograman lain class sering diiklankan untuk "memodelkan objek dunia nyata atau entitas logis". Ini sebagian benar dengan Python. Perhatikan bahwa Python menawarkan banyak alternatif untuk menggunakan class, mis. kamus, tuple bernama atau DataFrames mungkin sering memiliki tujuan yang sama dengan baik.
+print (a)
 
-Motivasi lain untuk menggunakan class yang Anda temukan di buku teks adalah enkapsulasi, memisahkan bagian dari program Anda dari yang lain. Enkapsulasi tidak ada dalam Python (mis. Anda tidak dapat mendeklarasikan bagian class sebagai privat dengan cara yang tidak dapat dielakkan). Jika Anda bergantung pada kode Anda yang diisolasi secara ketat dari bagian lain (misalnya dalam aplikasi keamanan kritis atau saat mengatur program yang sangat besar), pertimbangkan bahasa pemrograman lain selain Python.
+output:
+
+<Akun Albert Einstein memiliki 1000199 >
+
+Mengimplementasikan **repr**(self) sebagai metode pertama di class baru dapat menjadi pertimbangan untuk jika ingin menghasilkan keluaran string.
+
+Dalam bahasa pemrograman lain class sering digunakan untuk "memodelkan objek dunia nyata atau entitas logis". Hal tersebut bukan satu-satunya fungsi class di Python karena banyak alternatif untuk penggunaan class lainyya, misal sebagai dictionary, named tuple atau DataFrames.
+
+Kasus lain dalam menggunakan class adalah enkapsulasi, yaitu memisahkan bagian dari program dengan bagian yang lain yang akan dibahas di bagian lain.

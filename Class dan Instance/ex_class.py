@@ -17,11 +17,9 @@ class akun:
         self.saldo -= jumlah
 
 
+# Test
 a = akun('Albert Einstein', 999999)
 print(a.name, a.saldo)
-
 a.deposit(200)
-
 print(a.name, a.saldo)
-
 print(a)
