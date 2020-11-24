@@ -51,6 +51,8 @@ Omnivora
 ```
 
 ## Polymorfisme dengan method class
+Pyhton memperlakukan class yang berbeda dengan cara yang sama. Sebagai contoh dengan membuat beberapa class dan mengiterasi dengan loop
+dapat diperoleh polimorfisme dengan kode di bawah ini:
 
 ```python
 class jawa_tengah():
@@ -78,7 +80,10 @@ for propinsi in (obj_ind, obj_usa):
 ```
 
 ## Polimorfisme dengan Inheritance
-Polimorfisme dapat diperoleh melalui inheritance
+
+Polimorfisme dapat diperoleh melalui inheritance dari class induk oleh class anak. Modifikasi terhadap metode pada class anak dapat dilakukan
+untuk menyesuaikan implementasinya. Berikut contoh kode polimorfisme dengan Inheritance:
+
 ```python
 class burung:
     def awalan(self):
