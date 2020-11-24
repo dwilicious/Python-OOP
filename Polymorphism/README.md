@@ -78,6 +78,7 @@ for propinsi in (obj_ind, obj_usa):
 ```
 
 ## Polimorfisme dengan Inheritance
+Polimorfisme dapat diperoleh melalui inheritance
 ```python
 class burung:
     def awalan(self):
