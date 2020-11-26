@@ -12,3 +12,6 @@ https://hub.docker.com/r/dwilicious/code-server-python
 Tips:
 Instalasi docker, python maupun vscode di windows dapat dipermudah menggunakan chocolatey. Silakan baca langkah instalasi chocolatey di https://chocolatey.org/docs/installation.
 Paket aplikasi chocolatey dan perintah instalasinya dapat dilihat di halaman ini https://chocolatey.org/packages atau jalankan skrip *install_requirement.cmd* sebagai administrator
+
+Lihat juga:
+1. Pendahuluan https://github.com/dwilicious/Python-OOP/blob/main/intro.md
