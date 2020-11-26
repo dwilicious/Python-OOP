@@ -12,3 +12,7 @@ Masing-masing fungsi bersifat independen dan beroperasi dengan mengeluarkan outp
 cenderung mennggunakan paradigma ini adalah Haskell.
 
 Python adalah bahasa pemrograman hybrid yang memungkinkan pemrogram menggunakan kode program prosedural maupun paradigma pemrograman berbasis obyek.
+
+Terdapat beberapa video tutorial yang dapat disimak untuk memulai belajar Python, berikut:
+1. Seri belajar Python oleh kelas terbuka https://www.youtube.com/watch?v=iA8lLwmtKQM&list=PLZS-MHyEIRo59lUBwU-XHH7Ymmb04ffOY
+2. Seri belajar Python OOP oleh kelas terbuka https://www.youtube.com/watch?v=1PjHsUnOkes&list=PLZS-MHyEIRo7ab0-EveSvf4CLdyOECMm0
